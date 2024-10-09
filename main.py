@@ -3,6 +3,7 @@ import tkinter as tk
 from tkinter import messagebox, ttk, filedialog
 from PIL import Image, ImageTk
 
+# pyinstaller --onefile --windowed --icon=feliz.ico main.py
 # Conectar ao banco de dados SQLite
 def connect_db():
     conn = sqlite3.connect('gatos.db')
