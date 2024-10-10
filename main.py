@@ -342,21 +342,21 @@ entry_id_avos_maternos = tk.Entry(app)
 entry_id_avos_maternos.grid(row=8, column=1)
 
 # Novo campo para o caminho da imagem
-tk.Label(app, text="Caminho da Imagem:").grid(row=5, column=0)
+tk.Label(app, text="Caminho da Imagem:").grid(row=9, column=0)
 entry_caminho_imagem = tk.Entry(app)
-entry_caminho_imagem.grid(row=5, column=1)
+entry_caminho_imagem.grid(row=9, column=1)
 
 # Botões
-tk.Button(app, text="Adicionar Gato", command=add_gato).grid(row=9, column=0)
-tk.Button(app, text="Adicionar Relação", command=add_relacao).grid(row=9, column=1)
-tk.Button(app, text="Atualizar", command=update_gato).grid(row=9, column=2)
-tk.Button(app, text="Excluir", command=delete_gato).grid(row=9, column=3)
-tk.Button(app, text="Escolher Imagem", command=choose_image).grid(row=8, column=2)
+tk.Button(app, text="Adicionar Gato", command=add_gato).grid(row=10, column=0)
+tk.Button(app, text="Adicionar Relação", command=add_relacao).grid(row=10, column=1)
+tk.Button(app, text="Atualizar", command=update_gato).grid(row=10, column=2)
+tk.Button(app, text="Excluir", command=delete_gato).grid(row=10, column=3)
+tk.Button(app, text="Escolher Imagem", command=choose_image).grid(row=10, column=2)
 
 
 # TreeView para exibir os gatos
 tree = ttk.Treeview(app, columns=("ID", "Nome", "Cor", "Raça", "Descrição", "Origem"), show='headings')
-tree.grid(row=10, column=0, columnspan=4)
+tree.grid(row=11, column=0, columnspan=4)
 tree.heading("ID", text="ID")
 tree.heading("Nome", text="Nome")
 tree.heading("Cor", text="Cor")
